@@ -964,7 +964,7 @@ ZEND_DLEXPORT void onStatement(zend_op_array *op_array)
 int apd_zend_startup(zend_extension *extension)
 {
 	TSRMLS_FETCH();
-	CG(extended_info) = 1;  /* XXX: this is ridiculous */
+    CG(compiler_options) |= ZEND_COMPILE_EXTENDED_INFO;
 	return zend_startup_module(&apd_module_entry);
 }
 
