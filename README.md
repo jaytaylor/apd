@@ -6,9 +6,9 @@ Date: 2012-03-02
     `make install` or `sudo make install`
     then add the following lines to the appropriate php.ini file:
 
-        `zend_extension = /usr/local/php/5.3.8/lib/php/extensions/no-debug-non-zts-20090626/apd.so`
-        `apd.dumpdir = /tmp/trace`
-        `apd.statement_tracing = 0`
+        zend_extension = /usr/local/php/5.3.8/lib/php/extensions/no-debug-non-zts-20090626/apd.so
+        apd.dumpdir = /tmp/trace
+        apd.statement_tracing = 0
 
 ## description ##
     this shell script helps build the current version of the
